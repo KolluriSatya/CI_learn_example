@@ -1,5 +1,4 @@
-name:
-     siri
+name: siri
 on:
   push:
     branches:
@@ -12,5 +11,6 @@ jobs:
             - uses: "marvinpinto/action-automatic-releases@latest"
               with:
                   repo_token: "${{ secrets.GITHUB_TOKEN }}"
+                  automatic_release_tag: "v0.0.6"
                   prerelease: false
     
