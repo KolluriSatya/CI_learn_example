@@ -3,9 +3,8 @@ name:
 on:
   push: 
     tags:
-      -"v*"
-     
-     
+      - "v*"
+
 jobs:
    release:
       - name:"prasu"
