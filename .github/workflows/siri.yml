@@ -1,12 +1,11 @@
-name:
-     siri
+name: siri
 on:
   push:
     branches:
-      [ main ]
+      [ master ]
 jobs:
    release:
-            name: "prasu2"
+            name: "release"
             runs-on: "ubuntu-latest"
             steps:
             - uses: "marvinpinto/action-automatic-releases@latest"
