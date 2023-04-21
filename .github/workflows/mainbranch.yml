@@ -1,0 +1,6 @@
+on:
+  workflow_run:
+    workflows: ["learn-github-actions.yml"]
+    types: [requested]
+    branches:
+      - 'releases/**'
