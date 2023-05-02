@@ -32,6 +32,6 @@
           uses: docker/build-push-action@v4
           with:
             push: true
-            tags: satyakp/vc:latest
+            tags: satyakp/ci_learn_example:latest
             secrets: |
               GIT_AUTH_TOKEN=${{ secrets.PERSONAL_TOKEN }}
