@@ -13,8 +13,8 @@
           uses: snapserv/action-autotagbot@master
           with:
             api_token: '${{ secrets.PERSONAL_TOKEN }}'
-            source_file: 'version.json'
-            version_pattern: '"version"\s*:\s*"(?<version>[0-9.]+)"'
+            source_file: 'version.py'
+            version_pattern: '__version__\s*=\s*"(?<version>[0-9.]+)"'
             tag_format: 'v{version}'
     docker:
       runs-on: ubuntu-latest
