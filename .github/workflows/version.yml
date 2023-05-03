@@ -14,7 +14,7 @@
           with:
             api_token: '${{ secrets.PERSONAL_TOKEN }}'
             source_file: 'version.py'
-            version_pattern: '__version__ = "[0-9]+\.[0-9]+\.[0-9]+"'
+            version_pattern: '__version__ = "^[0-9]{1}(?:\\.\\d*)\\/[0-9]{1}(?:\\.\\d*)\\/[0-9]{1,2}$"'
             tag_format: 'v{version}'
     docker:
       runs-on: ubuntu-latest
