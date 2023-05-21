@@ -1,0 +1,23 @@
+package:
+  name: kma
+  version: 1.4.9
+
+source:
+  path: ..
+
+build:
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record=record.txt
+
+requirements:
+  build:
+    - python
+    - numpy>=1.11.1,<1.16.0
+    - scipy
+    - opencv
+
+  run:
+    - python
+    - numpy>=1.11.1,<1.16.0
+    - scipy
+    - opencv
