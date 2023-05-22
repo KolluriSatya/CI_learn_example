@@ -35,16 +35,3 @@
             tags: satyakp/ci_learn_example:latest
             secrets: |
               GIT_AUTH_TOKEN=${{ secrets.PERSONAL_TOKEN }}
-    conda:
-        runs-on: ubuntu-latest
-        steps:
-          - name: Checkout
-            uses: actions/checkout@v2
-          - name: publish-to-conda
-            uses: amauryval/publish_conda_package_action@2.0.3
-            with:
-              CondaDir: 'conda'
-              Channels: 'bioconda'
-              Platforms: 'osx-64 linux-32 linux-64 win-32 win-64 noarch'
-              CondaUsername: ${{ secrets.CONDA_USERNAME }}
-              CondaPassword: ${{ secrets.CONDA_PASSWORD }}
