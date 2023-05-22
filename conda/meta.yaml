@@ -3,7 +3,15 @@ package:
   version: 1.4.9
 
 source:
-  - path: ./
+  - git_url: https://bitbucket.org/genomicepidemiology/kma.git
 
+requirements:
 build:
-  script: cd kma && make
+  - python
+  - setuptools
+
+run:
+  - python
+test:
+imports:
+  - kma
