@@ -9,13 +9,15 @@ build:
   number: 2
 
 requirements:
-host:
-  - python
-  - setuptools
-
+  host:
+    - python
+    - setuptools
+  build:
+   - python
+    - numpy
 run:
   - python
-
+  - numpy
 test:
   commands:
   - kma -h
