@@ -1,13 +1,9 @@
 package:
-  name: kma
-  version: 1.5.2
+  name:
+  version:
 
 source:
-  path: ..
-
-build:
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  git_url: https://bitbucket.org/genomicepidemiology/kma.git
 
 requirements:
   build:
