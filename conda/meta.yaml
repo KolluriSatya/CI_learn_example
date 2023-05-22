@@ -6,20 +6,4 @@ source:
   - path: ./
 
 build:
-  script: python -m pip install --no-deps --ignore-installed . -v
-  script_env:
-    - NBVAL_OUTPUT
-  osx_is_app: True
-  noarch: python
-
-
-requirements:
-  build:
-    - pip
-  run:
-    - pyemma
-    - mdshare
-    - notebook
-    - nglview
-    - jupyter_contrib_nbextensions
-    - nbexamples
+  script: cd kma && make
