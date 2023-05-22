@@ -9,13 +9,13 @@ build:
   number: 2
 
 requirements:
-  host:
-    - zlib
-  build:
-    - make
-  run:
-    - zlib
+host:
+  - python
+  - setuptools
+
+run:
+  - python
 
 test:
   commands:
-  - kma -h grep KMA >/dev/null
+  - kma -h
