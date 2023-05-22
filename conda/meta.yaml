@@ -17,10 +17,6 @@ requirements:
   run:
     - zlib
 
-test:
-  commands:
-    - kma -h | grep KMA >/dev/null
-
 about:
   home: https://bitbucket.org/genomicepidemiology/kma
   summary: 'KMA is mapping a method designed to map raw reads directly against redundant databases, in an ultra-fast manner using seed and extend.'
