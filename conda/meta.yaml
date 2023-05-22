@@ -8,15 +8,12 @@ source:
 
 build:
   number: 0
-  script: python -m pip install --no-deps --ignore-installed . -v
 
 requirements:
   build:
     - pip
-    - numpy >=1.13
 
   run:
-    - numpy >=1.13
     - notebook
     - nglview
     - jupyter_contrib_nbextensions

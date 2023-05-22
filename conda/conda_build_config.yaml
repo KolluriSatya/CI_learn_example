@@ -4,4 +4,3 @@ channels:
   - defaults
 dependencies:
   - kma=1.4.9
-  - numpy >=1.13
