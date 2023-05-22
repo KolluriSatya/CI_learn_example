@@ -13,6 +13,7 @@ build:
 requirements:
   build:
     - pip
+    - numpy >=1.13
 
   run:
     - numpy >=1.13
