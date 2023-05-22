@@ -1,20 +1,19 @@
 package:
-  name:
-  version:
 
 source:
-  git_url: https://bitbucket.org/genomicepidemiology/kma.git
-  script: cd kma && make
+  url: https://bitbucket.org/genomicepidemiology/kma.git
 
 build:
   number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
 
 requirements:
-  build:
+  host:
     - pip
-
+    - python
   run:
-    - notebook
-    - nglview
-    - jupyter_contrib_nbextensions
-    - nbexamples
+    - python
+
+test:
+  imports:
+    - kma
