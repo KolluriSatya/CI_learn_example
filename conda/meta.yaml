@@ -1,17 +1,24 @@
+{% set name = "kma" %}
+{% set version = "1.4.9" %}
+
 package:
   name: kma
   version: 1.4.9
 
 source:
-  - git_url: https://bitbucket.org/genomicepidemiology/kma.git
+  url: https://bitbucket.org/genomicepidemiology/kma.git
+
+build:
+  number: 1
 
 requirements:
-build:
-  - python
-  - setuptools
+  host:
+    - zlib
+  build:
+    - make
+  run:
+    - zlib
 
-run:
-  - python
 test:
-imports:
-  - kma
+  commands:
+  - kma -h
