@@ -4,11 +4,12 @@ package:
 
 source:
   git_url: https://bitbucket.org/genomicepidemiology/kma.git
+  script: cd kma && make
 
 requirements:
   build:
     - python
-
+    - numpy=1.13
   run:
     - python
-
+    - numpy=1.13
