@@ -3,7 +3,7 @@ package:
   version: 1.4.9
 
 #source:
-#  url: https://bitbucket.org/genomicepidemiology/kma.git
+# url: https://bitbucket.org/genomicepidemiology/kma.git
 
 build:
   number: 2
