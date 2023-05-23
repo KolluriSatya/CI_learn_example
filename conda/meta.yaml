@@ -1,12 +1,11 @@
 package:
-  name: kma
-  version: 1.4.9
 
 source:
   url: https://bitbucket.org/genomicepidemiology/kma.git
 
 build:
   number: 2
+  script: cd kma && make
 
 requirements:
   build:
