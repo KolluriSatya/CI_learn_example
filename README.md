@@ -14,7 +14,8 @@ Once after pushing the edited files into github, we check the actions tab.
 In actions tab, we check the jobs listed in version.yml file i.e., 1)auto-tag-release 2)docker 3)conda
 After completing the jobs in actions, check dockerhub and anaconda for latest code changes. 
 
-**PROJECT STRUCTURE **
+**PROJECT STRUCTURE**
+
 ![](project_struct.png)
 
 **GITHUB TRIGGERING EVENTS**
