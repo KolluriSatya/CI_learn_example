@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: an-example-conda-project
+Version: 1.2.4
+Summary: An demonstration of how to create, document, and publish to the cheese shop a5 pypi.org.
+Home-page: https://https://github.com/KolluriSatya/CI_learn_example
+Author: Kolluri Satya
+Author-email: satyakprasannakolluri1995@gmail.com
+License: BSD
+Keywords: example learning
+Classifier: Development Status :: 01 - testing
+Classifier: Topic :: Conda install and build
+Classifier: License :: OSI Approved :: BSD License
