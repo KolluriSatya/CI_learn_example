@@ -15,7 +15,7 @@ In actions tab, we check the jobs listed in version.yml file i.e., 1)auto-tag-re
 After completing the jobs in actions, check dockerhub and anaconda for latest code changes. 
 
 **PROJECT STRUCTURE **
-![](home/Pictures/Screenshots)
+![](project_struct.png)
 
 **GITHUB TRIGGERING EVENTS**
 Only when we make a push from development branch to main branch, the event is triggered. NOTE: Not when testing branches to development branches. 
