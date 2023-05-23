@@ -2,12 +2,13 @@ package:
   name: kma
   version: 1.4.9
 
-source:
-  url: https://bitbucket.org/genomicepidemiology/kma.git
+#source:
+#  url: https://bitbucket.org/genomicepidemiology/kma.git
 
 build:
   number: 2
-  script: cd kma && make
+  script: git clone https://bitbucket.org/genomicepidemiology/kma.git && cd kma && make
+  entry_points: kma
 
 requirements:
   build:
