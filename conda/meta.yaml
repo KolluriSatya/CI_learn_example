@@ -10,7 +10,6 @@ build:
 
 requirements:
   build:
-    - sysroot_linux
   host:
     - zlib
   run:
