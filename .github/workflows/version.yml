@@ -37,6 +37,7 @@
               GIT_AUTH_TOKEN=${{ secrets.PERSONAL_TOKEN }}
     conda:
         runs-on: ubuntu-latest
+        needs: docker
         steps:
           - name: Checkout
             uses: actions/checkout@v2
