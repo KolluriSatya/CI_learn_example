@@ -1,23 +1,25 @@
-**CONTINUOUS INTEGRATION**
+# Project Description
+**KMA** is mapping a method designed to map raw reads directly against redundant databases, in an ultra-fast manner using seed and extend. 
 
-**SETUP**
+# Setup
 
 To setup and run this, we require the below files:  
-version.py  - To list the sematic versioning of the application in python format  
-Dockerfile - The dockerfile command for initial build of dockerimage.    
-meta.yaml - Requires path to the source file and requirements to build the package.      
-conda_build_yaaml_file - To list the channels and required dependencies.
-version.yaml - Workflow file that triggers the events, builds and helps to push the latest changes into dockerhub and anaconda. 
+* **version.py**  - To maintain the sematic version of the application in python format.  
+* **Dockerfile** - This file contains source path of the code that is build as dockerimage.      
+* **meta.yaml** - This file contains the source code details of kma project which will be used to build in anaconda distribution.      
+* **conda_build_yaml_file** - This file includes the channels and dependencies required for the project.
+* **version.yaml** - Workflow file that triggers the events, builds and helps to push the latest changes into dockerhub and anaconda distribution. 
 
-**HOW TO USE?**     
+## Usage
+**automatic-tag-release**
+
 Once after we make a push to github, we check the actions tab.     
 In actions tab, we check the jobs listed in version.yml file i.e., 1)auto-tag-release 2)docker 3)conda
 After completing the jobs in actions, check dockerhub and anaconda for latest code changes. 
 
-**PROJECT STRUCTURE**
-
+## Project Structure
 ![](project_struct.png)
 
-**GITHUB TRIGGERING EVENTS**        
+## Github triggering events       
 Only when we make a push from development branch to main branch, the event is triggered. NOTE: Not when testing branches to development branches. 
 
