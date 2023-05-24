@@ -23,20 +23,25 @@ To setup and run this, we require the below files:
   <img src="./images/docker.png" alt="Size Limit CLI" width="538">
 </p>
 
-### Conda
+### conda
  Once the **dockerimage** is pushed into **dockerhub**, **version.yaml** would build a conda package and then push it into the **anaconda distribution**
 <p align="left">
   <img src="./images/conda.png" alt="Size Limit CLI" width="538">
 </p>
 
 ### secrets
- 
+
 Secrets related to the authentication of dockerhub, conda and other all are maintained under the secrets section in the github repository.   
 
 ## Project Structure
 
+The below is the project structure, how the code is being maintained and files are placed related to source file and build. 
 
+<p align="center">
+  <img src="./images/project_structure.png" alt="Size Limit CLI" width="438">
+</p>
 
 ## Github triggering events       
+
 Only when we make a push from development branch to main branch, the event is triggered. NOTE: Not when testing branches to development branches. 
 
