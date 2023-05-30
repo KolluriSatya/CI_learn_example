@@ -35,7 +35,7 @@
             tags: satyakp/ci_learn_example:latest
             secrets: |
               GIT_AUTH_TOKEN=${{ secrets.PERSONAL_TOKEN }}
-    conda123:
+    conda:
         runs-on: ubuntu-latest
         needs: docker
         steps:
