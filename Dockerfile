@@ -15,7 +15,6 @@ RUN conda init bash
 
 # Activate the environment, and make sure it's activated:
 RUN echo "conda activate myenv" > ~/.bashrc
-RUN kma -h
 RUN pip install kmergenetyper
 
 # The code to run when container is started:
