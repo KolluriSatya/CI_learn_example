@@ -1,18 +1,15 @@
 FROM continuumio/miniconda3
-WORKDIR /app
 
-# Make RUN commands use `bash --login`:
-SHELL ["/bin/bash", "--login", "-c"]
+WORKDIR /app
 
 # Create the environment:
 COPY kmergenetyper.yml .
 RUN conda env create -f kmergenetyper.yml
 
-# Initialize conda in bash config fiiles:
-RUN conda init bash
-
 # Activate the environment, and make sure it's activated:
-RUN conda activate myenv
+RUN conda activate kmergenetyper
+RUN echo "Make sure flask is installed:"
+RUN python -c "import flask"
 
 # Override default shell and use bash
 SHELL ["conda", "run", "-n", "kmergenetyper", "/bin/bash", "-c"]
@@ -21,4 +18,6 @@ RUN kma -h
 
 RUN pip install kmergenetyper
 
+# The code to run when container is started:
+COPY run.py .
 ENTRYPOINT ["conda", "run", "-n", "kmergenetyper"]
