@@ -1,9 +1,7 @@
+name: kmergenetyper
 channels:
   - conda-forge
   - bioconda
   - defaults
 dependencies:
   - kma=1.4.9
-  - opencv3==3.0.0=py35_0
-  - tbb==4.3_20141023=0
-  
