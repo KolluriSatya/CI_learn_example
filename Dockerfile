@@ -15,8 +15,6 @@ RUN conda init bash
 
 # Activate the environment, and make sure it's activated:
 RUN echo "conda activate myenv" > ~/.bashrc
-RUN echo "Make sure flask is installed:"
-RUN python -c "import flask"
 RUN kma -h
 RUN pip install kmergenetyper
 
