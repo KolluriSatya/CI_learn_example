@@ -5,8 +5,12 @@ WORKDIR /app
 COPY kmergenetyper.yml .
 RUN conda env create -f kmergenetyper.yml
 
+# Initialize conda in bash config fiiles:
+RUN conda init bash
+
 # Activate the environment, and make sure it's activated:
 RUN conda activate myenv
+
 # Override default shell and use bash
 SHELL ["conda", "run", "-n", "kmergenetyper", "/bin/bash", "-c"]
 
