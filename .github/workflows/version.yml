@@ -1,8 +1,8 @@
-  name: automatic-version-release1
+  name: conda-automatic-release
   on:
     push:
       branches:
-      - main
+      - development
   jobs:
     auto-tag-release:
       runs-on: ubuntu-latest

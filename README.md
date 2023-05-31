@@ -1,23 +1,47 @@
-**CONTINUOUS INTEGRATION**
+# Project Description
+**KMA** is mapping a method designed to map raw reads directly against redundant databases, in an ultra-fast manner using seed and extend. 
 
-**SETUP**
+# Setup
 
 To setup and run this, we require the below files:  
-version.py  - To list the sematic versioning of the application in python format  
-Dockerfile - The dockerfile command for initial build of dockerimage.    
-meta.yaml - Requires path to the source file and requirements to build the package.      
-conda_build_yaaml_file - To list the channels and required dependencies.
-version.yaml - Workflow file that triggers the events, builds and helps to push the latest changes into dockerhub and anaconda. 
+* **version.py**  - To maintain the sematic version of the application in python format.  
+* **Dockerfile** - This file contains source path of the code that is build as dockerimage.      
+* **meta.yaml** - This file contains the source code details of kma project which will be used to build in anaconda distribution.      
+* **conda_build_yaml_file** - This file includes the channels and dependencies required for the project.
+* **version.yaml** - Workflow file that triggers the events, builds and helps to push the latest changes into dockerhub and anaconda distribution. 
 
-**HOW TO USE?**     
-Once after we make a push to github, we check the actions tab.     
-In actions tab, we check the jobs listed in version.yml file i.e., 1)auto-tag-release 2)docker 3)conda
-After completing the jobs in actions, check dockerhub and anaconda for latest code changes. 
+## Usage
+### automatic-tag-release
+ As part of continuous integration, automatic-tag-release job from **version.yaml** would check the repository and validate the version that is mentioned in the **version.py** and it would create the automatic release tag.
+<p align="left">
+  <img src="./images/automatic_tag_release.png" alt="Size Limit CLI" width="538">
+</p>
 
-**PROJECT STRUCTURE**
+### docker
+ Once the tag is created, **version.yaml** would check the **Dockerfile**, creates a docker image from the repository and then push it into the **Dockerhub**
+<p align="left">
+  <img src="./images/docker.png" alt="Size Limit CLI" width="538">
+</p>
 
-![](project_struct.png)
+### conda
+ Once the **dockerimage** is pushed into **dockerhub**, **version.yaml** would build a conda package and then push it into the **anaconda distribution**
+<p align="left">
+  <img src="./images/conda.png" alt="Size Limit CLI" width="538">
+</p>
 
-**GITHUB TRIGGERING EVENTS**        
+### secrets
+
+Secrets related to the authentication of dockerhub, conda and other all are maintained under the secrets section in the github repository.   
+
+## Project Structure
+
+The below is the project structure, how the code is being maintained and files are placed related to source file and build. 
+
+<p align="center">
+  <img src="./images/project_structure.png" alt="Size Limit CLI" width="438">
+</p>
+
+## Github triggering events       
+
 Only when we make a push from development branch to main branch, the event is triggered. NOTE: Not when testing branches to development branches. 
 
