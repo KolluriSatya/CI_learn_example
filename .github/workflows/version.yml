@@ -3,6 +3,8 @@
     push:
       branches:
       - development
+      tags:
+      - v*
   jobs:
     auto-tag-release:
       runs-on: ubuntu-latest
@@ -34,6 +36,7 @@
             push: true
             tags: satyakp/ci_learn_example:latest
             secrets: |
+<<<<<<< HEAD
               GIT_AUTH_TOKEN=${{ secrets.PERSONAL_TOKEN }}
     conda:
         runs-on: ubuntu-latest
@@ -49,3 +52,6 @@
               Platforms: 'osx-64 linux-32 linux-64 win-32 win-64 noarch'
               CondaUsername: ${{ secrets.CONDA_USERNAME }}
               CondaPassword: ${{ secrets.CONDA_PASSWORD }}
+=======
+              GIT_AUTH_TOKEN=${{ secrets.PERSONAL_TOKEN }}
+>>>>>>> dfa283d (docker1)

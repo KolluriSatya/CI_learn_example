@@ -1,5 +1,5 @@
 # Project Description
-**KMA** is mapping a method designed to map raw reads directly against redundant databases, in an ultra-fast manner using seed and extend. 
+**KMA** is mapping a method designed to map raw reads directly against redundant databases, in an ultra-fast manner using seed and extend.
 
 # Setup
 
@@ -43,5 +43,11 @@ The below is the project structure, how the code is being maintained and files a
 
 ## Github triggering events       
 
-Only when we make a push from development branch to main branch, the event is triggered. NOTE: Not when testing branches to development branches. 
+Only when we make a push from development branch to main branch, the event is triggered.  
+NOTE: When testing branches is merged to development branches, the events are not triggered.  
 
+## Commands
+git file changes
+git add --all
+git commit -m "messgae"
+git 
