@@ -14,7 +14,7 @@ RUN conda env create -f kmergenetyper.yml
 RUN conda init bash
 
 # Activate the environment, and make sure it's activated:
-RUN conda activate myenv
+RUN echo "conda activate myenv" > ~/.bashrc
 RUN echo "Make sure flask is installed:"
 RUN python -c "import flask"
 RUN kma -h
