@@ -1,13 +1,10 @@
 FROM continuumio/miniconda3
 WORKDIR /app
-<<<<<<< HEAD
-=======
 
 # Create the environment:
 COPY kmergenetyper.yml .
 
 RUN conda env create -f kmergenetyper.yml
->>>>>>> dfa283d (docker1)
 
 # Create the environment:
 COPY kmergenetyper.yml .
