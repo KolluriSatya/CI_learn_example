@@ -1,2 +1,6 @@
-numpy:
-  - 1.24
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - kma 1.4.9
