@@ -6,11 +6,14 @@ source:
   url: https://github.com/genomicepidemiology/kmergenetyper/archive/refs/tags/v1.0.16.tar.gz
 
 build:
-  number: 0
+  number: 2
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
 
 requirements:
+  build:
+    - kma >=1.4.9
+    - python >=3.6
   host:
     - python >=3.6
     - pip
