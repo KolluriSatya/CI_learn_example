@@ -1,26 +1,25 @@
 package:
-  name: kma
-  version: 1.4.9
+  name: kmergenetyper
+  version: 1.0.13
 
 source:
-  url: https://bitbucket.org/genomicepidemiology/kma/get/1.4.9.tar.gz
+  url: https://github.com/genomicepidemiology/kmergenetyper/archive/refs/tags/v1.0.16.tar.gz
+
 
 build:
-  number: 2
+  number: 0
+  noarch: python >=3.6
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
 
 requirements:
-  build:
-    - make
-    - {{ compiler('c') }}
   host:
-    - zlib
+    - python >=3.6
+    - pip
+    - kma >=1.4.9
   run:
-    - zlib
-
+    - python >=3.6
+    - kma >=1.4.9
 about:
-  home: https://bitbucket.org/genomicepidemiology/kma
-  summary: 'KMA is mapping a method designed to map raw reads directly against redundant databases, in an ultra-fast manner using seed and extend.'
+  home: https://github.com/genomicepidemiology/kmergenetyper
+  summary: 'Kmergenetyper test.'
   license: Apache-2.0
-extra:
-  identifiers:
-    - doi:10.1186/s12859-018-2336-6
