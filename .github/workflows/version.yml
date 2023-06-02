@@ -13,6 +13,6 @@
         with:
           subDir: 'conda'
           channels: '-c conda-forge -c bioconda -c defaults'
-          AnacondaToken: ${{ secrets.GENOMICEPIDEMIOLOGY_CONDA_AUTH_TOKEN }}
+          AnacondaToken: ${{ secrets.SATYAKP_CONDA_AUTH_TOKEN }}
           publish: true
           test_all: true
