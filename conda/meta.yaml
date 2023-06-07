@@ -7,9 +7,8 @@ source:
 
 build:
   number: 2
-  noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
-  script: conda install mamba -n base -c conda-forge
+
 requirements:
   host:
     - python ==3.6
