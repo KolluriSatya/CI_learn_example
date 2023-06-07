@@ -4,3 +4,5 @@ channels:
 dependencies:
   - kma 1.4.9
   - python >=3.6
+numpy:
+      - 1.13
