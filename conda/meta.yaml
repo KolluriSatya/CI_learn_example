@@ -11,12 +11,10 @@ build:
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
 
 requirements:
-  build:
-    - python ==3.8
-    - kma >=1.4.9
   host:
-    - python ==3.8
+    - python ==3.6
     - kma >=1.4.9
+    - pip
   run:
-    - python ==3.8
+    - python ==3.6
     - kma >=1.4.9
