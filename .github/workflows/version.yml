@@ -1,4 +1,4 @@
-  name: automatic-version-release1
+  name: automatic-version-check1
   on:
     push:
       branches:
