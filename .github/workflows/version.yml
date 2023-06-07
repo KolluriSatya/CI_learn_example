@@ -6,13 +6,28 @@
   jobs:
     conda:
       runs-on: ubuntu-latest
+      strategy:
+        matrix:
+          python-version: [ "3.8" ]
       steps:
-      - uses: actions/checkout@v1
-      - name: publish-to-conda
-        uses: paskino/conda-package-publish-action@master
-        with:
-          subDir: 'conda'
-          channels: 'bioconda'
-          AnacondaToken: ${{ secrets.SATYAKP_CONDA_AUTH_TOKEN }}
-          publish: true
-          test_all: true
+        - uses: actions/checkout@v3
+          with:
+            fetch-depth: 0
+        - name: Conda environment creation and activation
+          uses: conda-incubator/setup-miniconda@v2
+          with:
+            python-version: ${{ matrix.python-version }}
+            environment-file: ./meta.yaml
+            auto-update-conda: false
+            auto-activate-base: false
+            show-channel-urls: true
+        - name: Build and upload the conda packages
+          uses: uibcdf/action-build-and-upload-conda-packages@v1.2.0
+          with:
+            meta_yaml_dir: ./meta.yaml
+            python-version: ${{ matrix.python-version }}
+            platform_linux-64: true
+            platform_osx-64: true
+            platform_win-64: true
+            label: auto
+            token: ${{ secrets.SATYAKP_CONDA_AUTH_TOKEN }}

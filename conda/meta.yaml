@@ -22,8 +22,3 @@ requirements:
   run:
     - python >=3.6
     - kma >=1.4.9
-    - mdshare
-    - notebook
-    - nglview
-    - jupyter_contrib_nbextensions
-    - nbexamples
