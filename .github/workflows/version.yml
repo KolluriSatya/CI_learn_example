@@ -17,16 +17,14 @@
           uses: conda-incubator/setup-miniconda@v2
           with:
             python-version: ${{ matrix.python-version }}
-            subDir: conda
-            environment-file: meta.yaml
+            environment-file: conda/meta.yaml
             auto-update-conda: false
             auto-activate-base: false
             show-channel-urls: true
         - name: Build and upload the conda packages
           uses: uibcdf/action-build-and-upload-conda-packages@v1.2.0
           with:
-            subDir: conda
-            meta_yaml_dir: meta.yaml
+            meta_yaml_dir: conda/meta.yaml
             python-version: ${{ matrix.python-version }}
             platform_linux-64: true
             platform_osx-64: true
