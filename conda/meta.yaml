@@ -6,8 +6,7 @@ source:
   url: https://github.com/genomicepidemiology/kmergenetyper/archive/refs/tags/v1.0.16.tar.gz
 
 build:
-  number: 2
-  script: conda update -y --all
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
 
 requirements:
