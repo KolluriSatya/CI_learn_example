@@ -7,6 +7,7 @@ source:
 
 build:
   number: 2
+  script: conda update -y --all
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
 
 requirements:
