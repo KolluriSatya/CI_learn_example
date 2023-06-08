@@ -7,7 +7,6 @@ source:
 
 build:
   number: 2
-  noarch: python
 requirements:
   build:
     - make
