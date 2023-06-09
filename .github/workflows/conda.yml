@@ -1,0 +1,19 @@
+name: conda-automatic-release
+on:
+  push:
+    branches:
+      - conda
+  jobs:
+  conda:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: publish-to-conda
+        uses: paskino/conda-package-publish-action@master
+        with:
+          subDir: 'conda'
+          channels: '-c conda-forge -c bioconda -c defaults'
+          AnacondaToken: ${{ secrets.SATYAKP_CONDA_AUTH_TOKEN }}
+          Publish: true
+          test_all: true
+          convert_osx: true
