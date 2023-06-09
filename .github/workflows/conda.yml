@@ -1,4 +1,3 @@
-name: conda_build
 on:
   push:
     branches: [ conda ]
