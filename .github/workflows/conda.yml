@@ -1,4 +1,4 @@
-name: automatic-release
+name: automaticrelease
 on:
   push:
     branches:
