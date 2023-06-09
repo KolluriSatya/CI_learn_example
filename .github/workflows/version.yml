@@ -1,4 +1,3 @@
-  name: conda
   on:
     push:
       branches:
