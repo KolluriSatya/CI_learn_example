@@ -1,12 +1,12 @@
-  name: automatic-version-check1
+  name: conda_on_mac
   on:
     push:
       branches:
-        - tester
-   jobs:
-    conda:
-      runs-on: ubuntu-latest
-      steps:
+      - tester
+    jobs:
+      conda:
+       runs-on: ubuntu-latest
+       steps:
         - uses: actions/checkout@v1
         - name: publish-to-conda
           uses: paskino/conda-package-publish-action@master
