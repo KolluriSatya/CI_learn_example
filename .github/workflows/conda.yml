@@ -1,10 +1,10 @@
-name: conda-automatic-release
+name: automatic-release
 on:
   push:
     branches:
       - conda
   jobs:
-  conda:
+  ana_releases:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
