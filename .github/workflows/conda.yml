@@ -1,5 +1,5 @@
 name:
-  releases1
+  releases2
 on:
   push:
     branches: [ conda ]
