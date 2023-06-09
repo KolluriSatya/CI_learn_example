@@ -3,8 +3,8 @@
     push:
       branches:
         - tester
-  jobs:
-    conda:
+    jobs:
+     conda:
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v1
