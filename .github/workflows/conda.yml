@@ -1,9 +1,8 @@
-name:
-  releases2
+name: release
 on:
   push:
     branches: [ conda ]
-  jobs:
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
@@ -17,3 +16,4 @@ on:
           publish: true
           test_all: true
           convert_osx: true
+          convert_win: true
