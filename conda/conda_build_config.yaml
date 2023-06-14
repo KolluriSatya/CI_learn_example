@@ -7,7 +7,7 @@ extend_keys:
   - ignore_version
   - extend_keys
   - ignore_build_only_deps
-fortran_compiler: gfortran
+fortran_compiler: gfortran_osx-64
 ignore_build_only_deps:
   - numpy
   - python
