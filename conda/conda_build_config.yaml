@@ -1,3 +1,7 @@
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
 c_compiler:
   - rainwoodman-gcc
 cxx_compiler:
