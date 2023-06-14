@@ -10,4 +10,5 @@ ignore_build_only_deps:
   - numpy
   - python
 target_platform:
+  - linux-64
   - osx-64
