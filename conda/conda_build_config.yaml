@@ -1,14 +1,26 @@
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-c_compiler:
-  - gcc
-cxx_compiler:
-  - gxx
+c_compiler: gcc
+cpu_optimization_target: nocona
+cran_mirror: https://cran.r-project.org
+cxx_compiler: gxx
+extend_keys:
+  - pin_run_as_build
+  - ignore_version
+  - extend_keys
+  - ignore_build_only_deps
+fortran_compiler: gfortran
 ignore_build_only_deps:
   - numpy
   - python
-target_platform:
-  - linux-64
-  - osx-64
+lua: '5'
+numpy: '1.16'
+perl: 5.26.2
+pin_run_as_build:
+  python:
+    min_pin: x.x
+    max_pin: x.x
+  r-base:
+    min_pin: x.x
+    max_pin: x.x
+python: '3.7'
+r_base: '3.5'
+target_platform: linux-64

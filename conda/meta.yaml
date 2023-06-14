@@ -6,8 +6,7 @@ source:
   url: https://bitbucket.org/genomicepidemiology/kma/get/1.4.9.tar.gz
 
 build:
-  number: 0
-  osx_is_app: True
+  number: 2
 
 requirements:
   build:
