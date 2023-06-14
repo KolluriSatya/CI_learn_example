@@ -1,4 +1,7 @@
-c_compiler: gcc
+c_compiler:
+  - rainwoodman-gcc
+cxx_compiler:
+  - rainwoodman-gcc
 ignore_build_only_deps:
   - numpy
   - python
