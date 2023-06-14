@@ -3,9 +3,9 @@ channels:
   - bioconda
   - defaults
 c_compiler:
-  - rainwoodman-gcc
+  - gcc
 cxx_compiler:
-  - rainwoodman-gcc
+  - gxx
 ignore_build_only_deps:
   - numpy
   - python
