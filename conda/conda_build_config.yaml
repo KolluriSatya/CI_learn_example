@@ -1,0 +1,4 @@
+python_c_compiler:
+  - vs2015
+target_platform:
+  - osx-64
