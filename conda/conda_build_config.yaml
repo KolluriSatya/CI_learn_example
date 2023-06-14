@@ -1,3 +1,6 @@
 c_compiler: gcc
+ignore_build_only_deps:
+  - numpy
+  - python
 target_platform:
   - osx-64
