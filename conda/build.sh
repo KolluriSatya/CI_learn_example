@@ -6,5 +6,7 @@ cp $BINARIES $PREFIX/bin
 export CFLAGS="${CFLAGS} -i sysroot ${CONDA_BUILD_SYSROOT}"
 export CONDA_BUILD_SYSROOT= $PREFIX/bin
 
+
 mkdir -p $PREFIX/doc/kma
 cp README.md $PREFIX/doc/kma/
+
