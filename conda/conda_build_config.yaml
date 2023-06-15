@@ -1,7 +1,7 @@
-c_compiler: clang
+c_compiler: clang_osx-64
 cpu_optimization_target: nocona
 cran_mirror: https://cran.r-project.org
-cxx_compiler: clangxx
+cxx_compiler: clangxx_osx-64
 CONDA_BUILD_SYSROOT:
   - /opt/MacOSX10.10.sdk
 extend_keys:
@@ -26,4 +26,4 @@ pin_run_as_build:
     max_pin: x.x
 python: '3.7'
 r_base: '3.5'
-target_platform: win-64
+target_platform: osx-64
