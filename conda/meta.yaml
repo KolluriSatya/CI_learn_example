@@ -1,47 +1,30 @@
-# This file created by conda-build 3.21.9
-# meta.yaml template originally from:
-# /github/workspace/conda, last modified Thu Jun  8 10:59:35 2023
-# ------------------------------------------------
-
 package:
   name: kma
   version: 1.4.9
+
 source:
   url: https://bitbucket.org/genomicepidemiology/kma/get/1.4.9.tar.gz
+
 build:
-  number: '2'
-  string: h9bf148f_2
+  number: 2
+
 requirements:
   build:
-    - _libgcc_mutex 0.1 conda_forge
-    - _openmp_mutex 4.5 2_gnu
-    - binutils_impl_linux-64 2.39 he00db2b_1
-    - binutils_linux-64 2.39 h5fc0e48_13
-    - gcc_impl_linux-64 12.2.0 hcc96c02_19
-    - gcc_linux-64 12.2.0 h4798a0e_13
-    - kernel-headers_linux-64 2.6.32 he073ed8_15
-    - ld_impl_linux-64 2.39 hcc3a1bd_1
-    - libgcc-devel_linux-64 12.2.0 h3b97bd3_19
-    - libgcc-ng 13.1.0 he5830b7_0
-    - libgomp 13.1.0 he5830b7_0
-    - libsanitizer 12.2.0 h46fd767_19
-    - libstdcxx-ng 13.1.0 hfd8a6a1_0
-    - make 4.3 hd18ef5c_1
-    - zlib 1.2.13
-    - sysroot_linux-64 2.12 he073ed8_15
+    - make
+    - {{ compiler('c') }}
   host:
     - zlib 1.2.13
   run:
-    - libgcc-ng >=12
-    - libzlib >=1.2.13,<1.3.0a0
-    - zlib
+    - zlib 1.2.13
+
+test:
+  commands:
+    - kma -h | grep KMA >/dev/null
+
 about:
   home: https://bitbucket.org/genomicepidemiology/kma
+  summary: 'KMA is mapping a method designed to map raw reads directly against redundant databases, in an ultra-fast manner using seed and extend.'
   license: Apache-2.0
-  summary: KMA is mapping a method designed to map raw reads directly against redundant
-    databases, in an ultra-fast manner using seed and extend.
 extra:
-  copy_test_source_files: true
-  final: true
   identifiers:
     - doi:10.1186/s12859-018-2336-6
