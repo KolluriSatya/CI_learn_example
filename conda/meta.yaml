@@ -16,7 +16,6 @@ always_include_files:
 
 requirements:
   build:
-    - make
     - {{ compiler('c') }}
   host:
     - python
