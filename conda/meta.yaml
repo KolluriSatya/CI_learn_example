@@ -6,7 +6,8 @@ source:
   url: https://bitbucket.org/genomicepidemiology/kma/get/1.4.9.tar.gz
 
 build:
-  number: 2
+  noarch: python
+  number: 0
 
 requirements:
   build:
