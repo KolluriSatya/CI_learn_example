@@ -35,7 +35,6 @@ m2w64_fortran_compiler:        # [win]
   - m2w64-toolchain            # [win]
 rust_compiler:
   - rust
-  - rust-gnu                   # [win]
 rust_compiler_version:
   - 1.64.0
 CONDA_BUILD_SYSROOT:
@@ -88,9 +87,6 @@ glib:
 gmp:
   - 6.1  # [not (osx and arm64)]
   - 6.2  # [osx and arm64]
-# glibc used in ctng compiler builds
-gnu:
-  - 2.12.2
 harfbuzz:
   - 4.3.0
 hdf4:
