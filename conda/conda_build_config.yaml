@@ -1,4 +1,4 @@
-c_compiler: gcc_osx-64
+c_compiler: gcc
 cpu_optimization_target: nocona
 cran_mirror: https://cran.r-project.org
 cxx_compiler: gxx
@@ -9,7 +9,6 @@ extend_keys:
   - ignore_build_only_deps
 fortran_compiler:
   - gfortran_osx-64
-  - gcc_osx-64
 ignore_build_only_deps:
   - numpy
   - python
