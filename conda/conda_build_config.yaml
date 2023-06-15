@@ -1,7 +1,9 @@
-c_compiler: gcc
+c_compiler: clang
 cpu_optimization_target: nocona
 cran_mirror: https://cran.r-project.org
-cxx_compiler: gxx
+cxx_compiler: clangxx
+CONDA_BUILD_SYSROOT:
+  - /opt/MacOSX10.10.sdk
 extend_keys:
   - pin_run_as_build
   - ignore_version
