@@ -4,3 +4,4 @@ mkdir -p ${PREFIX}/bin
 cp $BINARIES $PREFIX/bin
 mkdir -p $PREFIX/doc/kma
 cp README.md $PREFIX/doc/kma/
+pip3 install kma
