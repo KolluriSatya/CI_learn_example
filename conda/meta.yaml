@@ -9,14 +9,10 @@ build:
   noarch: python
   number: 0
 
-always_include_files:
-  - bin/conda                    # [unix]
-  - bin/activate                 # [unix]
-  - bin/deactivate               # [unix]
-
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
   host:
     - python
     - zlib 1.2.13
