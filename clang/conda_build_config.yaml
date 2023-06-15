@@ -1,0 +1,8 @@
+python_c_compiler:
+  - vs2015
+r_c_compiler:
+  - m2w64-gcc
+c_compiler:
+  - super_duper_clang
+target_platform:
+  - osx-64
