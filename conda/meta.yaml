@@ -27,6 +27,7 @@ requirements:
     - libsanitizer 12.2.0 h46fd767_19
     - libstdcxx-ng 13.1.0 hfd8a6a1_0
     - make 4.3 hd18ef5c_1
+    - zlib 1.2.13
     - sysroot_linux-64 2.12 he073ed8_15
   host:
     - zlib 1.2.13 h166bdaf_4
