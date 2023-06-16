@@ -41,7 +41,6 @@ sqlite:
   - 3
 target_platform:
   - linux-64
-  - osx-64
 zlib:
   - 1.2
 extend_keys:
