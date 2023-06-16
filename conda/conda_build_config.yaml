@@ -62,3 +62,5 @@ channel_targets:
   - conda-forge
   - bioconda
   - defaults
+dependencies:
+  - libblas=*=*openblas
