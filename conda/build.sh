@@ -4,4 +4,4 @@ mkdir -p ${PREFIX}/bin
 cp $BINARIES $PREFIX/bin
 mkdir -p $PREFIX/doc/kma
 cp README.md $PREFIX/doc/kma/
-"{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
