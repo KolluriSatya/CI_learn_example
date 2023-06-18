@@ -12,13 +12,10 @@ requirements:
   build:
     - {{ compiler('c') }}
   host:
-    - python
-    - pip
-    - zlib 1.2.13
+    - zlib
   run:
-    - python
-    - zlib 1.2.13
-
+    - zlib
+    -
 test:
   commands:
     - kma -h | grep KMA >/dev/null
