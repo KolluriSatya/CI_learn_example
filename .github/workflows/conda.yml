@@ -11,8 +11,7 @@ jobs:
         uses: paskino/conda-package-publish-action@master
         with:
           subDir: 'conda'
-          channels: '-c conda-forge -c bioconda -c defaults'
+          channels: 'conda-forge -c bioconda -c defaults'
           AnacondaToken: ${{ secrets.SATYAKP_CONDA_AUTH_TOKEN }}
           publish: true
           test_all: true
-          convert_osx: true
