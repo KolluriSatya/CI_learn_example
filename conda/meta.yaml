@@ -16,7 +16,7 @@ requirements:
     - zlib 1.2.13
     - sqlite 3.36.0
     - ncurses 6.4
-    - readline 8.0
+    - readline 9.0
   run:
     - zlib 1.2.13
 
