@@ -15,7 +15,7 @@ requirements:
   host:
     - zlib 1.2.13
     - sqlite 3.41.2
-    - ncurses 6.1
+    - ncurses 6.4
     - readline 8.0
   run:
     - zlib 1.2.13
