@@ -14,8 +14,8 @@ requirements:
     - {{ compiler('c') }}
   host:
     - zlib 1.2.13
-    - sqlite 3.41.2
-    - ncurses 6.4
+    - sqlite 3.36.2
+    - ncurses 6.2
     - readline 8.0
   run:
     - zlib 1.2.13
