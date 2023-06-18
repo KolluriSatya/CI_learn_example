@@ -14,9 +14,9 @@ requirements:
     - {{ compiler('c') }}
   host:
     - zlib 1.2.13
+    - sqlite 3.41.2
   run:
     - zlib 1.2.13
-    - sqlite 3.41.2
 
 test:
   commands:

@@ -15,17 +15,4 @@ jobs:
           AnacondaToken: ${{ secrets.SATYAKP_CONDA_AUTH_TOKEN }}
           publish: true
           test_all: true
-  buildonmacos:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - uses: actions/checkout@v1
-      - name: publish-to-conda
-        uses: paskino/conda-package-publish-action@master
-        with:
-          subDir: 'conda'
-          channels: 'conda-forge -c bioconda -c defaults'
-          AnacondaToken: ${{ secrets.SATYAKP_CONDA_AUTH_TOKEN }}
-          publish: true
-          test_all: true
           convert_osx: true
