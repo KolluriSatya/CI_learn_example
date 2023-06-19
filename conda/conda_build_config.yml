@@ -1,0 +1,12 @@
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.9
+  - pip>=19.0
+  - jupyter
+  - tensorflow-deps
+  - sqlite 3.36.0
+  - ncurses 6.4
+  - readline 9.0

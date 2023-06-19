@@ -15,4 +15,4 @@ jobs:
           AnacondaToken: ${{ secrets.SATYAKP_CONDA_AUTH_TOKEN }}
           publish: true
           test_all: true
-          convert_osx: true
+          convert_osx-arm64: true
