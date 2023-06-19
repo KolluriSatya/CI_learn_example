@@ -12,6 +12,6 @@ jobs:
         with:
           subDir: 'conda'
           channels: 'conda-forge -c bioconda -c defaults'
-          AnacondaToken: ${{ secretps.SATYAKP_CONDA_AUTH_TOKEN }}
+          AnacondaToken: ${{ secrets.SATYAKP_CONDA_AUTH_TOKEN }}
           publish: true
           test_all: true
