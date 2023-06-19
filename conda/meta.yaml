@@ -13,11 +13,9 @@ requirements:
     - make
     - {{ compiler('c') }}
   host:
-    - zlib 1.2.13
-    - python 3.7
-    - sqlite 3.41.2
+    - zlib
   run:
-    - zlib 1.2.13
+    - zlib
 
 test:
   commands:
