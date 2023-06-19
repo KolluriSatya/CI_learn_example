@@ -3,13 +3,16 @@ on:
   push:
     branches: [ conda ]
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
       - name: publish-to-conda
-        uses: fcakyon/conda-publish-action@v1.3
+        uses: paskino/conda-package-publish-action@master
         with:
-          subdir: 'conda'
-          anacondatoken: ${{ secrets.SATYAKP_AUTH_TOKEN }}
-          platforms: 'win osx linux'
+          subDir: 'conda'
+          channels: 'conda-forge -c bioconda -c defaults'
+          AnacondaToken: ${{ secrets.SATYAKP_CONDA_AUTH_TOKEN }}
+          publish: true
+          test_all: true
+          convert_osx: true

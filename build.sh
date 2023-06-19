@@ -1,4 +1,4 @@
-#!/bin/
+#!/bin/sh
 BINARIES="kma kma_index kma_shm kma_update"
 make CFLAGS="-w -O3 -I$PREFIX/include -L$PREFIX/lib"
 
