@@ -10,8 +10,8 @@ go_to_build_dir() {
 }
 
 check_if_setup_file_exists() {
-    if [ ! -f setup.py ]; then
-        echo "setup.py must exist in the directory that is being packaged and published."
+    if [ ! -f build.sh ]; then
+        echo "build.sh must exist in the directory that is being packaged and published."
         exit 1
     fi
 }

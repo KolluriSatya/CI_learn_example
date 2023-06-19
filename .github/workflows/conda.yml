@@ -11,5 +11,5 @@ jobs:
         uses: fcakyon/conda-publish-action@v1.3
         with:
           subdir: 'conda'
-          anacondatoken: ${{ secrets.SATYAKP_CONDA_AUTH_TOKEN }}
+          anacondatoken: ${{ secrets.SATYAKP_AUTH_TOKEN }}
           platforms: 'win osx linux'
