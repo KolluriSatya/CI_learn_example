@@ -1,0 +1,15 @@
+{
+  "arch": "x86_64",
+  "build": "h9bf148f_2",
+  "build_number": 2,
+  "depends": [
+    "libgcc-ng >=11.2.0",
+    "zlib >=1.2.13,<1.3.0a0"
+  ],
+  "license": "Apache-2.0",
+  "name": "kma",
+  "platform": "osx",
+  "subdir": "osx-64",
+  "timestamp": 1685518536096,
+  "version": "1.4.9"
+}
