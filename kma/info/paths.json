@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "_path": "bin/kma",
+      "path_type": "hardlink",
+      "sha256": "fd95643c5654515282c2a46e2e618670b85282850bfe3ecf06e9ff7117c25ac7",
+      "size_in_bytes": 476904
+    },
+    {
+      "_path": "bin/kma_index",
+      "path_type": "hardlink",
+      "sha256": "bdbc35b1d4f29da2e3ea7bc05b6bdf526263fa395e88c0c7c35ea4363f311b54",
+      "size_in_bytes": 95344
+    },
+    {
+      "_path": "bin/kma_shm",
+      "path_type": "hardlink",
+      "sha256": "db8904c125219017b7243958da13efd0339106da1a6916971f9fa7a3dbb798de",
+      "size_in_bytes": 26624
+    },
+    {
+      "_path": "bin/kma_update",
+      "path_type": "hardlink",
+      "sha256": "0c930f7484396db34f70ebe4fb7fbb406f465d7c95648a47e922aada683370ad",
+      "size_in_bytes": 22176
+    },
+    {
+      "_path": "doc/kma/README.md",
+      "path_type": "hardlink",
+      "sha256": "94e2205dc08b4412ce29ecf132356c830ecb1231de3faab9615bbf5cf28ffa25",
+      "size_in_bytes": 6979
+    }
+  ],
+  "paths_version": 1
+}
