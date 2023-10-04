@@ -2,7 +2,7 @@
 
 mkdir -p ${PREFIX}/bin
 
-chmod +x resfinder.py
+chmod +x src/resfinder/cge/resfinder.py
 cp resfinder.py ${PREFIX}/bin/resfinder.py
 
 # copy script to download database
