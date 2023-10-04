@@ -7,7 +7,7 @@ package['name'] = 'resfinder'
 with open('src/resfinder/__init__.py', 'r') as f:
     for line in f:
         if line.startswith('__version__='):
-            package['version'] = line.split()[1]replace("\s*")
+            package['version'] = '\s*'
 
 source = yaml.comments.CommentedMap()
 source['url'] = 'https://bitbucket.org/genomicepidemiology/{}/get/{}.tar.gz'.format(package['name'], package['version'])
