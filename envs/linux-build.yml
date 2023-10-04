@@ -6,9 +6,9 @@ channels:
 dependencies:
   - mamba
   - python
+  - pandas
   - boa
+  - biopython
   - anaconda-client
   - cgecore
   - tabulate
-  - pandas
-  - biopython
