@@ -1,6 +1,6 @@
-name: automatic-version-release1
-on:
-  push:
+#name: automatic-version-release1
+#on:
+ # push:
     branches:
       - main
 jobs:
@@ -16,7 +16,7 @@ jobs:
           source_file: 'version.py'
           version_pattern: '__version__\s*=\s*"(?<version>[0-9.]+)"'
           tag_format: 'v{version}'
-  docker:
+  #docker:
     runs-on: ubuntu-latest
     steps:
       - name: Set up QEMU
@@ -35,3 +35,4 @@ jobs:
           tags: satyakp/ci_learn_example:latest
           secrets: |
             GIT_AUTH_TOKEN=${{ secrets.PERSONAL_TOKEN }}
+            #
