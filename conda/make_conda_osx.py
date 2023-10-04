@@ -4,7 +4,7 @@ import ruamel.yaml as yaml
 package = yaml.comments.CommentedMap()
 package['name'] = 'resfinder'
 
-with open('src/resfinder/__init__.py', 'r') as f:
+with open('src/resfinder/version.py', 'r') as f:
     for line in f:
         if line.startswith('#define'):
             package['version'] = '__version__\s*=\s*"(?<version>[0-9.]+)"'

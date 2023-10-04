@@ -4,10 +4,10 @@ import ruamel.yaml as yaml
 package = yaml.comments.CommentedMap()
 package['name'] = 'resfinder'
 
-with open('src/resfinder/__init__.py', 'r') as f:
+with open('src/resfinder/version.py', 'r') as f:
     for line in f:
-        if line.startswith('__version__='):
-            package['version'] = '\s*'
+        if line.startswith('#define'):
+            package['version'] = line.split()[2].replace("\"", "")
 
 source = yaml.comments.CommentedMap()
 source['url'] = 'https://bitbucket.org/genomicepidemiology/{}/get/{}.tar.gz'.format(package['name'], package['version'])

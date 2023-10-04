@@ -1,0 +1,1 @@
+#define RESFINDER_VERSION "1.4.14"
