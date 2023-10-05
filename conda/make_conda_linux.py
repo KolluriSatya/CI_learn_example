@@ -17,7 +17,7 @@ build['number'] = 0
 build['noarch'] = 'python'
 
 requirements = yaml.comments.CommentedMap()
-requirements['host'] = ['python >=3.8', 'kma', 'wget']
+requirements['host'] = ['python >=3.8', 'wget']
 requirements['run'] = ['tabulate >=0.8.9', 'pandas >=1.4.2', 'biopython >=1.79']
 
 about = yaml.comments.CommentedMap()
