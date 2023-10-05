@@ -17,8 +17,8 @@ build['number'] = 0
 build['noarch'] = 'python'
 
 requirements = yaml.comments.CommentedMap()
-requirements['host'] = ['python >=3.8', 'wget', 'biopython']
-requirements['run'] = ['biopython']
+requirements['host'] = ['python ==3.8', 'wget', 'biopython', 'tabulate', 'pandas']
+requirements['run'] = ['biopython', 'tabulate', 'pandas']
 
 about = yaml.comments.CommentedMap()
 about['home'] = 'https://bitbucket.org/genomicepidemiology/resfinder'
