@@ -2,8 +2,8 @@
 
 mkdir -p ${PREFIX}/bin
 
-chmod +x src/resfinder/run_resfinder.py
-cp src/resfinder/run_resfinder.py ${PREFIX}/bin/resfinder/run_resfinder.py
+chmod +x src/resfinder/resfinder.py
+cp src/resfinder/resfinder.py ${PREFIX}/bin/resfinder/resfinder.py
 
 # copy script to download database
 chmod +x ${RECIPE_DIR}/download-resfinder-db.sh
