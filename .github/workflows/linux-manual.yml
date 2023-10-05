@@ -34,7 +34,7 @@ jobs:
       - name: build conda package
         run: |
           conda config --set channel_priority true
-          conda mambabuild conda -c conda-forge -c bioconda -c defaults --output-folder .
+          conda mambabuild conda -c conda-forge -c defaults --output-folder .
 
       - name: upload conda package
         run: |
