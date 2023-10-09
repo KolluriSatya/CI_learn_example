@@ -6,8 +6,8 @@ channels:
 dependencies:
   - mamba
   - python==3.8
-  - pandas>=1.4.2
   - boa
+  - anaconda-client
   - cgelib>=0.7.3
   - cgecore==1.5.6
   - tabulate>=0.8.9
