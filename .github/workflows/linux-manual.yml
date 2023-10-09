@@ -23,6 +23,7 @@ jobs:
         run: |
           pip install PyYAML
           pip install ruamel.yaml
+          pip install cgelib
           python conda/make_conda_linux.py
           cat conda/meta.yaml
 
