@@ -46,7 +46,8 @@ data = {
 }
 
 # Convert the data to YAML and print it
-yaml_str = yaml.dump(data, sort_keys=False)
+yaml_str = yaml.dump(data, Dumper=yaml.RoundTripDumper).replace("\"{{", "{{").replace("}}\"", "}}")
+print(yaml_str)
 
 with open('conda/meta.yaml', 'w') as f:
     f.write(yaml_str)
