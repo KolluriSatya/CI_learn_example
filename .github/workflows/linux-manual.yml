@@ -1,6 +1,5 @@
 on:
   workflow_dispatch:
-name: Create Release
 
 jobs:
   conda-noarch:
@@ -21,15 +20,13 @@ jobs:
 
       - name: Make conda yaml
         run: |
-          pip install cgelib
           pip install PyYAML
-          pip install ruamel.yaml
-          python conda/make_conda_linux.py
-          cat conda/meta.yaml
+          pip install cgelib
+          python make_conda_linux.py
 
       - uses: mamba-org/setup-micromamba@v1
         with:
-          environment-file: envs/linux-build.yml
+          environment-file: envs/noarch-build.yml
 
       - name: build conda package
         run: |
