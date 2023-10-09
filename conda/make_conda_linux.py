@@ -7,10 +7,7 @@ sys.path = [os.path.join(os.path.dirname(os.path.realpath(__file__)), '')] + sys
 data = {
     "package": {
         "name": "resfinder",
-         with open("src/resfinder/version.py", "r") as f:
-            for line in f:
-                if line.startswith("#define"):
-                    package["version"] = line.split()[2].replace("\"", "")
+        "version": "4.3.3"
 },
     "source": {
         "url": "https://bitbucket.org/genomicepidemiology/{}/get/{}.tar.gz".format(package['name'], package['version'])
