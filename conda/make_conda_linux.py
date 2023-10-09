@@ -17,18 +17,15 @@ build['number'] = 0
 build['noarch'] = 'python'
 
 requirements = yaml.comments.CommentedMap()
-requirements['build'] = [ "cgelib>=0.7.3",
-                          "cgecore==1.5.6",
+requirements['build'] = [ "cgecore==1.5.6",
                           "tabulate>=0.8.9",
                           "pandas>=1.4.2",
                           "biopython>=1.79"]
-requirements['host'] = [ "cgelib>=0.7.3",
-                         "cgecore==1.5.6",
+requirements['host'] = [ "cgecore==1.5.6",
                          "tabulate>=0.8.9",
                          "pandas>=1.4.2",
                          "biopython>=1.79"]
-requirements['run'] = [ "cgelib>=0.7.3",
-                        "cgecore==1.5.6",
+requirements['run'] = [ "cgecore==1.5.6",
                         "tabulate>=0.8.9",
                         "pandas>=1.4.2",
                         "biopython>=1.79"]
