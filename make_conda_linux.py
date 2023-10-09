@@ -4,7 +4,7 @@ import sys
 
 sys.path = [os.path.join(os.path.dirname(os.path.realpath(__file__)), '')] + sys.path
 
-import src/resfinder/version.py as version
+import src.resfinder.version as version
 
 data = {
     "package": {
