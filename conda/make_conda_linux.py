@@ -7,11 +7,14 @@ sys.path = [os.path.join(os.path.dirname(os.path.realpath(__file__)), '')] + sys
 data = {
     "package": {
         "name": "resfinder",
-        "version": version.__version__
-    },
-    "source": {
-        "url": "https://github.com/genomicepidemiology/resfinder/archive/refs/tags/{}.tar.gz".format(version.__version__),
+        with open('src/resfinder/version.py', 'r') as f:
+            for line in f:
+                if line.startswith('#define'):
+                    package['version'] = line.split()[2].replace("\"", "")
 },
+    "source": {
+        "url": "https://bitbucket.org/genomicepidemiology/{}/get/{}.tar.gz".format(package['name'], package['version'])
+    },
     "build": {
         "number": 0,
         "noarch": "python",
