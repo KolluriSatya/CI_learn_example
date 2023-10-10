@@ -22,11 +22,8 @@ jobs:
         run: |
           pip install PyYAML
           pip install cgelib
-          python make_conda_linux.py
-
-      - name: Make pdm installation
-        run: |
           pip install pdm-pep517
+          python make_conda_linux.py
 
       - uses: mamba-org/setup-micromamba@v1
         with:
