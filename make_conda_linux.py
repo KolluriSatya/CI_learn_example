@@ -17,12 +17,11 @@ data = {
     "build": {
         "number": 0,
         "noarch": "python",
-        "script": "{{ PYTHON }} -m pip3 install . --no-deps"
+        "script": "{{ PYTHON }} -m pip3 install . --no-deps --ignore-installed -vvv"
     },
     "requirements": {
         "host": [
             "python >=3.8",
-            "pip",
             "kma >=1.4.9",
             "cgecore==1.5.6",
             "tabulate>=0.8.9",
