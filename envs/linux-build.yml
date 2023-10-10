@@ -7,5 +7,4 @@ dependencies:
   - python
   - boa
   - anaconda-client
-pip:
-  - -r file:pyproject.toml
+
