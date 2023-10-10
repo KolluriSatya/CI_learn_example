@@ -1,17 +1,10 @@
 name: linux-build
 channels:
   - conda-forge
-  - genomicepidemiology
-  - bioconda
   - defaults
 dependencies:
-  - libmamba
-  - libmambapy
   - mamba
   - python
   - boa
   - anaconda-client
-  - cgecore==1.5.6
-  - tabulate>=0.8.9
-  - pandas>=1.4.2
-  - biopython>=1.79
+
