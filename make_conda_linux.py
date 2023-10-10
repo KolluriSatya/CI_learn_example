@@ -23,7 +23,7 @@ data = {
         "host": [
             "python >=3.8",
             "kma >=1.4.9",
-            "cgecore==1.5.6",
+            "cgecore>=1.5.6",
             "tabulate>=0.8.9",
             "pandas>=1.4.2",
             "biopython>=1.79"
@@ -31,7 +31,7 @@ data = {
         "run": [
             "python >=3.8",
             "kma >=1.4.9",
-            "cgecore==1.5.6",
+            "cgecore>=1.5.6",
             "tabulate>=0.8.9",
             "pandas>=1.4.2",
             "biopython>=1.79"
