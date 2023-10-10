@@ -17,7 +17,7 @@ data = {
     "build": {
         "number": 0,
         "noarch": "python",
-        "script": "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+        "script": "{{ PYTHON }} -m pip3 install . --no-deps --ignore-installed -vvv"
     },
     "requirements": {
         "host": [
