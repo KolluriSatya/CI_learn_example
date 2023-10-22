@@ -12,7 +12,8 @@ data = {
         "version": version.__version__
     },
     "source": {
-        "url": "https://github.com/genomicepidemiology/resfinder/archive/refs/tags/{}.tar.gz".format(version.__version__),
+        "url": "https://files.pythonhosted.org/packages/ce/9c/f87f17e82b6666e3d3214cdf2970e46585108b5821ef80d2d58bf4470e86/resfinder-4.3.3.tar.gz",
+        "sha256": "9b45c520ae8e29a7035665959b9250e6a8c2d43b389d3da8299b6d493d14d9b7"
     },
     "build": {
         "number": 0,
