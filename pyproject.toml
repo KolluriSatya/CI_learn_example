@@ -20,7 +20,7 @@ license = {text = "Apache-2.0"}
 [project.optional-dependencies]
 
 [tool.pdm]
-version = {from = "src/resfinder/__init__.py"}
+version = {from = "src/resfinder/version.py"}
 
 [tool.pdm.dev-dependencies]
 test = [
