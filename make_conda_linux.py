@@ -44,11 +44,11 @@ data = {
         "summary": "resfinder test.",
         "license": "Apache-2.0"
     }
-}
+    }
 
 # Convert the data to YAML and print it
 os.system('mkdir conda')
-yaml_str = yaml.dump(data, sort_keys=True)
+yaml_str = yaml.dump(data, sort_keys=False)
 
 with open('conda/meta.yaml', 'w') as f:
     f.write(yaml_str)
