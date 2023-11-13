@@ -24,7 +24,7 @@ data = {
     "requirements": {
         "host": [
             "python>=3.8",
-            "kma>=1.4.9",
+            "kma",
             "cgecore",
             "tabulate>=0.8.9",
             "pandas>=1.4.2",
@@ -32,7 +32,7 @@ data = {
         ],
         "run": [
             "python>=3.8",
-            "kma>=1.4.9",
+            "kma",
             "cgecore",
             "tabulate>=0.8.9",
             "pandas>=1.4.2",
