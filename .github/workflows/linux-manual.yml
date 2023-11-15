@@ -22,6 +22,7 @@ jobs:
         run: |
           pip install PyYAML
           python make_conda_linux.py
+
       - name: Extract tag and update version.yaml
         run: |
           TAG=$(git describe --tags --abbrev=0)
