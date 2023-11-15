@@ -25,7 +25,7 @@ jobs:
 
       - name: Extract tag and update version.yaml
         run: |
-          TAG=$(git describe --tags --abbrev=0)
+          TAG=$(git --tags --abbrev=0)
           echo "Updating version.py with tag: $TAG"
           echo "version: $TAG" > version.py
           git add version.py
