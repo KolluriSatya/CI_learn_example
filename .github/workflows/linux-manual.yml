@@ -23,7 +23,6 @@ jobs:
           pip install PyYAML
           python make_conda_linux.py
 
-      - name: Release new versions using AutoTagBot
       - uses: snapserv/action-autotagbot@master
         with:
             api_token: '${{ secrets.PERSONAL_TOKEN }}'
