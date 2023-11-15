@@ -13,7 +13,7 @@ data = {
         "version": version.__version__
     },
     "source": {
-        "url": "https://bitbucket.org/genomicepidemiology/{}/get/{}.tar.gz.format(package["name"], package["version"])",
+        "url": "https://github.com/genomicepidemiology/resfinder/archive/refs/tags/{}.tar.gz".format(version.__version__),
         "sha256": "9b45c520ae8e29a7035665959b9250e6a8c2d43b389d3da8299b6d493d14d9b7"
     },
     "build": {
