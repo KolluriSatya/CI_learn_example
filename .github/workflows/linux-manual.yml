@@ -28,7 +28,7 @@ jobs:
             api_token: '${{ secrets.PERSONAL_TOKEN }}'
             source_file: 'version.json'
             version_pattern: '"version"\s*:\s*"(?<version>[0-9.]+)"'
-            tag_format: 'v{version}'
+            tag_format: '{version}'
 
       - uses: mamba-org/setup-micromamba@v1
         with:
