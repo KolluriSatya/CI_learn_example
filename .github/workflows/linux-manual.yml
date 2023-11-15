@@ -23,13 +23,6 @@ jobs:
           pip install PyYAML
           python make_conda_linux.py
 
-      - uses: snapserv/action-autotagbot@master
-        with:
-            api_token: '${{ secrets.PERSONAL_TOKEN }}'
-            source_file: 'version.json'
-            version_pattern: '"version"\s*:\s*"(?<version>[0-9.]+)"'
-            tag_format: '{version}'
-
       - uses: mamba-org/setup-micromamba@v1
         with:
           environment-file: envs/linux-build.yml
