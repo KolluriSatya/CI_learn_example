@@ -23,15 +23,13 @@ jobs:
           pip install PyYAML
           python make_conda_linux.py
 
-      - name: Extract tag and update version.yaml
-        run: |
-          TAG=$(git describe --tag --abbrev=0)
-          echo "Updating version.py with tag: $TAG"
-          echo "version: $TAG" > version.py
-          git add version.py
-          git commit -m "Update version.yaml with tag $TAG" || true
-          git tag -a -f $TAG -m "Tagging version $TAG" || true
-          git push origin HEAD:main --follow-tags
+      - name: Release new versions using AutoTagBot
+      - uses: snapserv/action-autotagbot@master
+        with:
+            api_token: '${{ secrets.PERSONAL_TOKEN }}'
+            source_file: 'version.py'
+            version_pattern: '"version"\s*:\s*"(?<version>[0-9.]+)"'
+            tag_format: 'v{version}'
 
       - uses: mamba-org/setup-micromamba@v1
         with:
