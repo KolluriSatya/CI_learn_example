@@ -22,6 +22,15 @@ jobs:
         run: |
           pip install PyYAML
           python make_conda_linux.py
+      - name: Extract tag and update version.yaml
+        run: |
+          TAG=$(git describe --tags --abbrev=0)
+          echo "Updating version.py with tag: $TAG"
+          echo "version: $TAG" > version.py
+          git add version.py
+          git commit -m "Update version.yaml with tag $TAG" || true
+          git tag -a -f $TAG -m "Tagging version $TAG" || true
+          git push origin HEAD:main --follow-tags
 
       - uses: mamba-org/setup-micromamba@v1
         with:
@@ -30,7 +39,7 @@ jobs:
       - name: build conda package
         run: |
           conda install -c anaconda anaconda-client
-          conda mambabuild resfinder -c conda-forge -c bioconda --output-folder .
+          conda mambabuild conda -c conda-forge -c bioconda --output-folder .
 
       - name: upload conda package
         run: |
